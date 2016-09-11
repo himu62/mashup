@@ -1,0 +1,83 @@
+@import '../node_modules/sanitize.css/sanitize.css';
+@import '../node_modules/font-awesome/css/font-awesome.css';
+
+html {
+	-webkit-tap-highlight-color: transparent;
+}
+
+:focus {
+	outline: 0;
+}
+
+html, body, #app, .app {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+
+h1 {
+	margin: 20px 0;
+	text-align: center;
+}
+
+form {
+	text-align: center;
+}
+
+.input {
+	position: relative;
+	width: 90vw;
+	max-width: 300px;
+	margin: 0 auto;
+	font-size: 1.5rem;
+
+	input {
+		border: 1px solid #ccc;
+		border-radius: 2px;
+		padding: 8px;
+		padding-left: 40px;
+		width: 100%;
+
+		&:focus {
+			border-color: #999;
+		}
+	}
+
+	button {
+		position: absolute;
+		left: 4px;
+		top: 0;
+		bottom: 0;
+
+		&:before {
+			content: '\f002';
+			display: inline-block;
+			font-family: FontAwesome;
+			-webkit-font-smoothing: antialiased;
+			cursor: pointer;
+		}
+	}
+}
+
+.results {
+	margin: 20px;
+}
+
+.img {
+	display: inline-block;
+	width: 200px;
+	height: 150px;
+	background-size: contain;
+	background-position: center;
+	margin: 5px;
+}
+
+.error {
+	text-align: center;
+
+	a:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
